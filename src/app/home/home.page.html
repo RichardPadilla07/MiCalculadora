@@ -23,12 +23,20 @@
     Restar
   </ion-button>
 
-  <ion-card *ngIf="result !== null" class="ion-margin-top">
+  <ion-button expand="block" fill="outline" (click)="calculate('mul')">
+    Multiplicar
+  </ion-button>
+
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('div')">
+    Dividir
+  </ion-button>
+
+  <ion-card *ngIf="operation" class="ion-margin-top">
     <ion-card-header>
       <ion-card-title>Resultado</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      {{ operation }}: <strong>{{ result }}</strong>
+      {{ operation }}<span *ngIf="result !== null">: <strong>{{ result }}</strong></span>
     </ion-card-content>
   </ion-card>
 </ion-content>

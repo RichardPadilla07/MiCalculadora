@@ -16,7 +16,7 @@ export class HomePage {
   result: number | null = null;
   operation: string = '';
 
-  calculate(op: 'sum' | 'sub') {
+  calculate(op: 'sum' | 'sub' | 'mul' | 'div') {
     const a = Number(this.num1);
     const b = Number(this.num2);
 
@@ -29,9 +29,27 @@ export class HomePage {
     if (op === 'sum') {
       this.result = a + b;
       this.operation = 'Suma';
-    } else {
+
+    } else if (op === 'sub') {
       this.result = a - b;
       this.operation = 'Resta';
+
+    } else if (op === 'mul') {
+      this.result = a * b;
+      this.operation = 'Multiplicación';
+
+    } else if (op === 'div') {
+      if (b === 0) {
+        this.result = null;
+        this.operation = 'No se puede dividir entre cero';
+      } else {
+        this.result = a / b;
+        this.operation = 'División';
+      }
+
+    } else {
+      this.result = null;
+      this.operation = 'Operación desconocida';
     }
   }
 }
