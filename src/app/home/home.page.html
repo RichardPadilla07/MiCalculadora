@@ -27,11 +27,27 @@
     Multiplicar
   </ion-button>
 
-  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('div')">
+  <ion-button expand="block" fill="outline" (click)="calculate('div')">
     Dividir
   </ion-button>
 
-  
+  <ion-button expand="block" fill="outline" color="tertiary" (click)="calculate('sen')">
+    Seno
+  </ion-button>
+
+  <ion-button expand="block" fill="outline" color="tertiary" (click)="calculate('cos')">
+    Coseno
+  </ion-button>
+
+  <ion-button expand="block" fill="outline" color="tertiary" (click)="calculate('tan')">
+    Tangente
+  </ion-button>
+
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('sqrt')">
+    Raíz cuadrada
+  </ion-button>
+
+
 
   <ion-card *ngIf="operation" class="ion-margin-top">
     <ion-card-header>
