@@ -21,11 +21,13 @@ export class LoginPage {
 
   constructor(private router: Router, private alertCtrl: AlertController) { }
 
+
+  // ESTO ES LO NUEVO: validacion de usuario y contraseña
   async login() {
     if (this.username === this.VALID_USER && this.password === this.VALID_PASS) {
       await this.router.navigateByUrl('/home');
     } else {
-      const alert = await this.alertCtrl.create({
+      const alert = await this.alertCtrl.create({ // aqui esta la logica para las alertas de error (en este caso del login incorrecto)
         header: 'Error',
         message: 'Usuario o contraseña incorrectos',
         buttons: ['OK']
