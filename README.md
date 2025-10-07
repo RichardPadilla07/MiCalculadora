@@ -4,7 +4,7 @@ Integrantes:
 - Richard Padilla
 - Ivan Castillo
 
-- LOGIN
+- LOGIN (usuario: admin y contraseña: 1234)
 
 
 <img width="950" height="298" alt="image" src="https://github.com/user-attachments/assets/e16e03d3-7a11-4c4d-adb4-ebd683ba8630" />
