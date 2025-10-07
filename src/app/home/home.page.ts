@@ -16,7 +16,7 @@ export class HomePage {
   result: number | null = null;
   operation: string = '';
 
-  calculate(op: 'sum' | 'sub' | 'mul' | 'div') {
+  calculate(op: 'sum' | 'sub' | 'mul' | 'div' | 'sen' | 'cos' | 'tan' | 'sqrt') {
     const a = Number(this.num1);
     const b = Number(this.num2);
 
@@ -46,6 +46,22 @@ export class HomePage {
         this.result = a / b;
         this.operation = 'División';
       }
+
+    } else if (op === 'sen') {
+      this.result = Math.sin(a);
+      this.operation = 'Seno';
+
+    } else if (op === 'cos') {
+      this.result = Math.cos(a);
+      this.operation = 'Coseno';
+
+    } else if (op === 'tan') {
+      this.result = Math.tan(a);
+      this.operation = 'Tangente';
+
+    } else if (op === 'sqrt') {
+      this.result = Math.sqrt(a);
+      this.operation = 'Raíz cuadrada';
 
     } else {
       this.result = null;

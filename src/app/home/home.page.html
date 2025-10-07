@@ -31,6 +31,24 @@
     Dividir
   </ion-button>
 
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('sen')">
+    Seno
+  </ion-button>
+
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('cos')">
+    Coseno
+  </ion-button>
+
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('tan')">
+    Tangente
+  </ion-button>
+
+  <ion-button expand="block" fill="solid" color="tertiary" (click)="calculate('sqrt')">
+    Raíz cuadrada
+  </ion-button>
+
+
+
   <ion-card *ngIf="operation" class="ion-margin-top">
     <ion-card-header>
       <ion-card-title>Resultado</ion-card-title>
