@@ -1,5 +1,8 @@
 LOGIN + CALCULADORA CIENTIFICA
 
+Integrantes:
+- Richard Padilla
+- Ivan Castillo
 
 - LOGIN
 
