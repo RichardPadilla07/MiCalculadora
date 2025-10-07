@@ -15,3 +15,4 @@ LOGIN + CALCULADORA CIENTIFICA
 
 - CALCULADORA CIENTIFICA
 
+<img width="923" height="654" alt="image" src="https://github.com/user-attachments/assets/46b6ee75-2bf8-4cc7-8212-6eda9f89a55b" />
